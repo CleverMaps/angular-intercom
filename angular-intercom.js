@@ -4,14 +4,8 @@
  * License: MIT
  */
 (function (root, factory) {
-  // AMD
-  if (typeof define === 'function' && define.amd) {
-    define(['angular'], function (angular) {
-      return factory(root, angular, root.Intercom);
-    });
-  }
   // Node.js
-  else if (typeof exports === 'object') {
+  if (typeof exports === 'object') {
     // Optional require in the intercom
     var intercom = null;
     try {
